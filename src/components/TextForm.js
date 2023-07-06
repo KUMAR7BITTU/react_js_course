@@ -4,10 +4,12 @@ export default function TextForm(props) {
 
     const handleUpClick = ()=>{
         console.log("Uppercase was clicked");
+        setText("You have clicked on handleUpClick")
     }
 
-    const handleOnChange = ()=>{
+    const handleOnChange = (event)=>{
         console.log("On change");
+        setText(event.target.value);
     }
 
     const [text,setText] = useState('Enter text here');
@@ -20,8 +22,8 @@ export default function TextForm(props) {
         <h1>{props.heading}</h1>
       <div className="mb-3">
         <textarea
-          className="form-control" value = {text}
-          onchange={handleOnChange} id="myBox"
+          className="form-control" value ={text}
+          onChange={handleOnChange} id="myBox"
           rows="15"
         ></textarea>
       </div>

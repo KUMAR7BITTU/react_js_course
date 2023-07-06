@@ -35,8 +35,8 @@ export default function TextForm(props) {
           rows="15"
         ></textarea>
       </div>
-      <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
-      <button className="btn btn-primary" onClick={handleLoClick}>
+      <button className ="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
+      <button className ="btn btn-primary mx-2" onClick={handleLoClick}>
         Convert to Lowercase</button>
     </div>
 

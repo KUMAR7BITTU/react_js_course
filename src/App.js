@@ -4,9 +4,12 @@ import './App.css';
 let name = "Bittu";
 function App() {
   return (
-    <div className="blank">lovely</div>
-    
-  );
+    <nav>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </nav>
+  )
 }
 
 export default App;
